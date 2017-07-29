@@ -1,0 +1,35 @@
+ <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <br/>
+                <h1>{{editer.pageHeading}}</h1>
+
+                <h3> {{editer.pageSubHeading}}</h3>
+                <div class="post-preview">
+                   <form ng-submit="editer.editBlog()">
+                       
+                       <input placeholder="Heading of Blog" type="text" name="heading" ng-model="editer.heading" required><br/><br/>
+                       <input placeholder="Sub Heading of Blog" type="text" name="subHeading" ng-model="editer.subHeading" required><br/><br/>
+                       <input placeholder="Author" type="text" name="author" ng-model="editer.author" required><br/><br/>
+                      
+                       <textarea rows="4" cols="50" ng-model="editer.bodyHtml" required>
+                            
+                       </textarea>
+                       <br/><br/>
+                       <input type="submit" value="Edit Blog">
+
+
+
+                   </form>
+                </div>
+                <hr>
+                
+              
+             
+                <!-- Pager -->
+                <ul class="pager">
+                    <li class="next">
+                        <a href="#/">Back to Home &rarr;</a>
+                    </li>
+                </ul>
+            </div>
+</div>
